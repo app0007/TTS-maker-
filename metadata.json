@@ -1,0 +1,6 @@
+{
+  "name": "GhostWriter YT",
+  "description": "Headless YouTube Automation Pipeline turning script text into voiced video posts automatically using AI TTS and YouTube Data API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+
+  /* Sophisticated Dark Palette */
+  --color-brand-bg: #0A0B0E;
+  --color-brand-card: #111216;
+  --color-brand-header: #0C0D12;
+  --color-brand-footer: #16171D;
+  --color-brand-border: #1F2128;
+  --color-brand-border-light: #2A2C35;
+  --color-brand-item: #1A1B20;
+  --color-brand-accent: #f59e0b;
+  --color-brand-accent-glow: rgba(245, 158, 11, 0.3);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0B0E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1F2128;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2A2C35;
+}
+
+/* Glassmorphism utility card */
+.glass-panel {
+  background: rgba(17, 18, 22, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #1F2128;
+}
+
+/* Subtle pulse glow with Amber */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.35);
+  }
+}
+
+.glowing-primary {
+  animation: glow-pulse 3s infinite;
+}
+
+/* Simple slider animations */
+.playback-progress {
+  transition: width 0.1s linear;
+}
